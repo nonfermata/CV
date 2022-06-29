@@ -9,70 +9,75 @@
 </head>
 
 <body>
-  <table cellspacing="15">
-    <tr>
-      <td>
-        <img
-          src="avatar.jpg"
-          alt="Дмитрий Баулин">
-      </td>
-      <td>
+  <div class="container">
+
+    <div class="info">
+      <img class="main_photo" src="avatar.jpg" alt="Дмитрий Баулин">
+      <div class="info_text">
         <h1>Дмитрий Баулин</h1>
-        <p>Люблю театр, путешествия, "Dead Can Dance", море, горы</p>
-      </td>
-    </tr>
-  </table>
+        <p>Люблю театр, путешествия, солнце, море, горы</p>
+        <div class="social">
+          <h2>Мои социальные сети</h2>
+          <ul>
+            <li><a href="https://t.me/febrecords" target="_blank">Telegram</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <li><a href="https://vk.com/nonfermata" target="_blank">VKontakte</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
-  <hr />
-  <h2>Мои социальные сети</h2>
-  <ul>
-    <li>Telegram</li>
-    <li>VKontakte</li>
-  </ul>
-  <hr />
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Пишу электронную музыку</li>
-    <li>Играю в бильярд</li>
-  </ol>
- 
-<hr />
+    <div class="card bg_blue">
+      <h2>Мои хобби</h2>
+      <ol>
+        <li>Пишу электронную музыку</li>
+        <li>Играю в бильярд</li>
+      </ol>
+    </div>
 
-  <h2>Опыт работы</h2>
-  <table>
-    <tr>
-      <th>Компания</th>
-      <th>Должность</td>
-      <th>Год</th>
-    </tr>
-    <tr>
-      <td>Bauer Logos</td>
-      <td>Дизайнер-верстальщик</td>
-      <td>2003-2004</td>
-    </tr>
-    <tr>
-      <td>ИП</td>
-      <td>Руководитель</td>
-      <td>2004-2022</td>
-    </tr>
-  </table>
-  <hr />
-  <h2>Связаться со мной</h2>
-<form action="/" method="get">
-  <label for="name">Ваше имя:</label>
-  <input type="text" id="name" placeholder="ввести имя">
-  <br>
-  <label for="email">Ваш e-mail:</label>
-  <input type="email" id="email" placeholder="ввести имя">
-  <br>
-  <label for="message">Введите текст сообщения:</label>
-  <br>
-  <textarea name="" id="" cols="30" rows="10" id="message"></textarea>
-  <br>
-  <input type="submit" name="" id="" value="Связаться">
-</form>
-  
+    <div class="card bg_green">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <tr>
+          <td>Электродепо "Безымянка"</td>
+          <td>Помощник машиниста</td>
+          <td>1997-1999</td>
+        </tr>
+        <tr>
+          <td>Студия "FebRecords"</td>
+          <td>Саунд-дизайнер</td>
+          <td>1999-2022</td>
+        </tr>
+        <tr>
+          <td>Bauer Logos</td>
+          <td>Дизайнер-верстальщик</td>
+          <td>2003-2004</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contact">
+      <h2>Связаться со мной</h2>
+      <form action="/" method="get">
+        <div class="form_row">
+          <div class="form_group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="введите имя">
+          </div>
+          <div class="form_group">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" placeholder="введите e-mail">
+          </div>
+        </div>
+        <div class="form_group">
+          <label for="message">Введите текст сообщения:</label>
+          <textarea name="" id="message" cols="30" rows="10" id="message"></textarea>
+        </div>
+        <input type="submit" name="" id="button" value="Связаться">
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>
